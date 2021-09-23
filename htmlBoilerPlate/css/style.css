@@ -1,0 +1,157 @@
+/**
+ * fil: css/style.css
+ **/
+/* Variabler: genbruges og gør designvalg enkle */
+:root {
+  /* farver */
+  --white: #fff6e7;
+  --green: #6b854b;
+
+  /* fonte */
+  --serif: font-family: serif;
+}
+
+/* Layout */
+html, body{
+  height: 100%;
+}
+
+body {
+  background-color: var(--white);
+  margin: 0;
+  height: 100%;
+  font-family: serif;
+}
+
+header {
+  text-align: center;
+  padding-top: 0.1px;
+}
+
+nav{
+  display: flex;
+  list-style-type: none;
+  width: 100%;
+  height: 20%;
+  background: #eee;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--white);
+}
+
+a {
+  text-decoration: none;
+  color: rgba(0,0,0,0.8);
+  margin: 0 40px;
+  font-weight: bolder;
+  font-family: serif;
+  font-size: 20px;
+}
+a:hover {
+  background-color: var(--green);
+}
+
+/* fjerner baggrundsfarve til logo */
+#logo2 {
+  margin: 0;
+}
+
+#logo2:hover {
+  background-color: inherit;
+}
+
+img {
+  width: 300px;
+  height: auto;
+  padding: 60px;
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-bottom: 0.1px;
+  cursor: pointer;
+}
+
+#streg {
+  padding-top: 0.1px;
+  width: 550px;
+  object-fit: fill;
+}
+/*Hero image -- billede med skrift indeni */
+.image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  width: 1000px;
+  height: auto;
+}
+
+.container {
+  position: relative;
+}
+
+/* knapper */
+.ccc {
+  position: absolute;
+  top: 80%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: inherit;
+  color: white;
+  padding: 2px 6px;
+  padding-bottom: 7px;
+  padding-top: 2px;
+  border-style: ridge;
+  border-width: thin;
+  border-color: white;
+  cursor: pointer;
+  font-size: 30px;
+  font-family: serif;
+  letter-spacing: 1px;
+  }
+
+.mmm {
+  position: absolute;
+  top: 80%;
+  left: 55%;
+  transform: translate(-45%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: var(--green);
+  color: white;
+  padding: 10px 20px;
+  padding-bottom: 9px;
+  padding-top: 4px;
+  cursor: pointer;
+  font-size: 30px;
+  font-family: serif;
+  letter-spacing: 1px;
+  border: none;
+  margin-right: -50%;
+}
+
+/* hover effect */
+.container .mmm:hover {
+  background-color: grey;
+}
+.ccc:hover {
+  background-color: var(--green);
+}
+
+/* footer*/
+footer {
+  display: flex;
+  float: right;
+  margin: 70px;
+}
+.fb {
+  width: 50px;
+  height: auto;
+  cursor: pointer;
+  padding-right: 20px;
+}
+.insta {
+  width: 44px;
+  height: auto;
+  cursor: pointer;
+  padding-right: 20px;
+}
